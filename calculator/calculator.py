@@ -1,3 +1,4 @@
+#create functioons for the operators 
 def add(a, b):
     return a + b
 
@@ -10,10 +11,12 @@ def multiply(a, b):
 def divide(a, b):
     return a / b
 
+#create variables for collecting user inputs
 num1 = float(input("Enter first number: "))
 num2 = float(input("Enter second number: "))
 operator = input("Enter operator (+, -, *, /): ")
 
+#logic for deciding which function is called based on user input
 if operator == "+":
     result = add(num1, num2)
 elif operator == "-":
@@ -29,4 +32,5 @@ else:
     print("Invalid operator")
     exit()
 
+#show result
 print(f"Result: {result}")
